@@ -4,27 +4,48 @@ Telegram Bulk Group Message Sender - Broadcaster
 This is a python code which send messages to all your telegram groups with just 1 click
 
 
-Automatically send a message to multiple Telegram groups and channels at once using the Telethon Python API.
+Telegram Bulk Message Broadcaster 🚀
+Send a single message to multiple Telegram groups and channels with a single command using Telethon.
 
+📖 Table of Contents
+Features
 Prerequisites
-Python: This script is written in Python. Make sure you have Python installed on your machine.
-Telethon: A Python Telegram client used to interact with the Telegram API. Install it using pip:
+Setup
+Usage
+Contributing
+License
+Features
+Easy to Use: Simply run the script, input your message, and let it do the rest!
+Error Handling: Understand which groups or channels had issues and why.
+Customizable: Adjust the number of dialogues fetched with ease.
+Prerequisites
+Python: Ensure you have Python installed.
+Telethon: A Python Telegram client. Install via pip:
 bash
 Copy code
 pip install telethon
-Telegram API credentials: You'll need to get your api_id and api_hash from Telegram's developer portal. Replace the placeholders 'id' and 'hash' in the code with your actual credentials.
+Telegram API Credentials: Obtain your api_id and api_hash from Telegram's developer portal.
+Setup
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/chavalasantosh/TelegramGroupBroadcast
+Navigate to the cloned directory:
+bash
+Copy code
+cd TelegramGroupBroadcast
+Install the required packages:
+bash
+Copy code
+pip install telethon
+Note: It's recommended to set up a virtual environment before installing packages.
+
 Usage
-Clone/download the script to your local machine.
+Replace 'id' and 'hash' in the script with your actual Telegram API credentials.
 Run the script:
 bash
 Copy code
 python main.py
-You'll be prompted to input the message you want to broadcast. Type in your message and hit enter.
-The script will then attempt to send the message to all the groups and channels in which you are a member or have the rights to send messages.
-It will display the status (success/failure) for each group or channel.
-Notes
-The script currently fetches a maximum of 200 dialogues due to the limit=200 parameter. You can adjust this number if necessary.
-Ensure you have the necessary rights to send messages in groups and channels. Otherwise, the script will display an error for that particular group or channel.
-Continuous use of this script in a short span of time may lead to rate limits or bans by Telegram due to spammy behavior. Use responsibly.
-License
-This project is open-source and free to use. However, please ensure you're adhering to Telegram's terms of service and guidelines when using and distributing this tool.
+Input your desired broadcast message when prompted.
+Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
